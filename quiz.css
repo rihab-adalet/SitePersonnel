@@ -1,0 +1,113 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #620e0e89, #f3ececcf); /* Dégradé circulaire */
+            color: #333;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 100px; 
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #620e0e89;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color:  #eae4e4;
+            color: #ffffff;
+            box-shadow: 0 2px 5px rgba(244, 2, 2, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color:#620e0e;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #620e0e;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ee1d1d;
+        }
+
+        .quiz-header .score {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #e60000;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            border: 1px solid #620e0e89;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .options input {
+            margin-right: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .footer .btn {
+            padding: 10px 20px;
+            background: #e60000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .footer .btn:hover {
+            background: #b30000;
+        }
+
+        .footer .question-progress {
+            font-size: 16px;
+            color: #620e0e89;
+        }
+
+        .hidden {
+            display: none;
+        }
+    

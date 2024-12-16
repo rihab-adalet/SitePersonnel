@@ -1,0 +1,84 @@
+body {
+    background-image: url('images/stats-bg.jpg'); /* L'image de fond */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Texte clair */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Superposition sombre */
+    z-index: -1;
+}
+
+/* Style de la carte */
+.card {
+    background: rgba(255, 255, 255, 0.3); /* Fond transparent avec opacité */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile pour améliorer la lisibilité */
+    color: white; /* Texte blanc */
+    backdrop-filter: blur(5px); /* Effet de flou pour l'arrière-plan sous la carte */
+}
+
+/* Si vous avez des titres dans les cartes */
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Texte dans la carte */
+.card p {
+    font-size: 1.1em;
+}
+.card button {
+    padding: 12px 24px;
+    background-color: #9b2d20;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile pour mettre en valeur le bouton */
+}
+
+.card button:hover {
+    background-color: #7a1e15;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Ombre plus marquée lors du survol */
+}
+
+
+.python {
+    background-image: url('../images/python.png'); 
+}
+
+.web {
+    background-image: url('../images/web.png');
+}
+
+.bdd {
+    background-image: url('../images/bd.png');
+}
+
+.mobi {
+    background-image: url('../images/mobile.png'); 
+}
+
+.proba {
+    background-image: url('../images/proba.png');
+}
+.bigdata {
+    background-image: url('../images/bigdata.png');
+}
+

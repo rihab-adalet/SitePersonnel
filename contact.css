@@ -1,0 +1,92 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/contact.jpg'); /* Image de fond de la page */
+            background-size: cover; /* Couvre toute la page */
+            background-position: center center; /* Centrer l'image */
+            background-attachment: fixed; /* L'image reste fixe lors du défilement */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: rgba(234, 228, 228, 0.8); /* Transparence de l'arrière-plan de l'en-tête */
+            color: #ffffff;
+            box-shadow: 0 2px 5px rgba(244, 2, 2, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #620e0e;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #620e0e;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ee1d1d;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.7); /* Fond du formulaire plus transparent */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre plus douce */
+            border-radius: 10px;
+            margin-top: 50px; /* Décalage du formulaire vers le bas */
+        }
+
+        h2 {
+            color: #620e0e;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent; /* Formulaire avec arrière-plan transparent */
+            padding: 20px;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #620e0e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #8a0f0f;
+        }
+
+    

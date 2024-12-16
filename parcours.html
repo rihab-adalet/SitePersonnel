@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parcours.css">
+    <title>Parcours Académique</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Parcours Académique</h1>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Premier diplôme -->
+        <div class="diploma">
+            <img src="images/dipENcours.png" alt="Licence universitaire" id="img1">
+            <div>
+                <h2>Cycle d’ingénieur en Génie Logiciel et Informatique Décisionnelle</h2>
+                <p>15/09/2024 - Juin 2027</p>
+                <p>Établissement : Institut International de Technologie (IIT)</p>
+            </div>
+        </div>
+
+        <!-- Deuxième diplôme -->
+        <div class="diploma">
+            <img src="images/dilpomeLIC.JPG" alt="Licence universitaire" id="img2">
+            <div>
+                <h2>Licence en Informatique, spécialisation en Big Data et Analyse de Données</h2>
+                <p>15/09/2021 - Juin 2024</p>
+                <p>Établissement : Institut Supérieur d'Informatique et de Multimédia de Sfax (ISIMS)</p>
+            </div>
+        </div>
+
+        <!-- Troisième diplôme -->
+        <div class="diploma">
+            <img src="images/diplomeBAC.jpg" alt="Diplôme du lycée" id="img3">
+            <div>
+                <h2>Diplôme du Baccalauréat Tunisien</h2>
+                <p>15/09/2020 - 31/05/2021</p>
+                <p>Établissement : Lycée Secondaire Ali Bourguiba Mahres</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modale -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+
+    <script>
+        // Récupérer les images et la modale
+        var modal = document.getElementById("myModal");
+        var imgModal = document.getElementById("imgModal");
+        var images = document.querySelectorAll(".diploma img");
+        
+        // Ajouter un événement de clic à chaque image
+        images.forEach(function(image) {
+            image.onclick = function() {
+                modal.style.display = "block";
+                imgModal.src = this.src;  // Affiche l'image agrandie dans la modale
+            };
+        });
+
+        // Fermer la modale lorsqu'on clique sur le bouton de fermeture
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Fermer la modale si on clique à l'extérieur de l'image
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+ 
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #620e0e89, #f3ececcf); /* Dégradé circulaire */
+    color: #333;
+}
+
+ 
+    header {
+        display: flex; /* Activer Flexbox */
+        justify-content: space-between; /* Espace entre les éléments */
+        align-items: center; /* Centrer verticalement les éléments */
+        padding: 15px 50px;
+        background-color:  #eae4e4; /* Couleur de fond */
+        color: #ffffff;
+        box-shadow: 0 2px 5px  rgba(244, 2, 2, 0.2); /* Ombre légère */
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 36px;
+        color:#620e0e;
+    }
+    /* Styles de la barre de navigation */
+    .navbar {
+        display: flex; /* Disposer les liens horizontalement */
+        gap: 20px; /* Espacement entre les liens */
+    }
+
+    .navbar a {
+        text-decoration: none; /* Supprimer le soulignement */
+        color: #620e0e; /* Couleur blanche */
+        font-weight: bold;
+        transition: color 0.3s; /* Animation lors du survol */
+    }
+
+    .navbar a:hover {
+        color: #ee1d1d; /* Couleur dorée au survol */
+    }
+
+    section {
+        padding: 20px 50px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #d60808;
+        border-bottom: 2px solid #d60808;
+        padding-bottom: 5px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content div {
+        flex: 1 1 calc(33% - 20px);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .content img {
+        width: 200px; /* Largeur fixe */
+        height: 200px; /* Hauteur fixe */
+        object-fit: cover; /* Garde les proportions tout en remplissant l'espace défini */
+        border-radius: 10px; /* Coins arrondis */
+        margin-bottom: 10px;
+        }
+
+      /* Style pour la section des langues */
+section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #620e0e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contentt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language-level {
+    width: 100%; /* Largeur à 100% pour chaque niveau */
+    background-color: #ddd; /* Couleur de fond de la barre */
+    border-radius: 5px;
+    height: 30px; /* Hauteur de la barre */
+}
+
+.level {
+    height: 100%; /* Hauteur de la barre égale à la barre de niveau */
+    border-radius: 5px;
+    background-color: #553131a7; /* Couleur de la barre */
+    transition: width 0.5s ease; /* Animation fluide lors du changement de largeur */
+}
+
+h3 {
+    font-size: 20px;
+    color: #620e0e;
+    margin-bottom: 5px;
+}
+
+        
+        
+        
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color:  #cdb8b8;
+        color: white;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .content div {
+            flex: 1 1 calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .content div {
+            flex: 1 1 100%;
+        }
+    }

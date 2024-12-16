@@ -1,0 +1,5 @@
+id;titre_a; année_p;type
+ART001;TTTT1;2016;Conférence
+ART002;TTTT2;2016;Journal
+ART003;TTTT3;2017;Conférence
+ART004;TTTT4;2018;Journal

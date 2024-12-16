@@ -1,0 +1,177 @@
+/* Image d'arrière-plan pour le body avec effet transparent */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* Image de fond */
+    background-image: url('images/campus.jfif'); /* Chemin vers votre image */
+    background-size: cover; /* L'image couvre tout le body */
+    background-position: center; /* Centrage de l'image */
+    background-repeat: no-repeat;
+
+    /* Effet de transparence */
+    background-color: rgba(0, 0, 0, 0.5); /* Couche semi-transparente noire */
+    background-blend-mode: overlay; /* Mélange la couleur avec l'image */
+    color: #fff; /* Texte en blanc pour le contraste */
+}
+
+/* Styles pour le contenu */
+h1, p, .navbar a, .specialities, #map h2 {
+    text-align: center;
+    color: #ffffff; /* Texte en blanc */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Ombre légère pour lisibilité */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1000px;
+}
+
+
+
+/* Section de localisation */
+#map {
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px auto; /* Espacement autour de la section */
+    background-color: #fff;
+    width: 90%; /* Largeur relative */
+    max-width: 1000px; /* Largeur maximale */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    text-align: center;
+}
+
+#map h2 {
+    color: #620e0e;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#map p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%; /* Prend toute la largeur */
+    overflow: hidden; /* S'assure qu'il n'y a pas de débordement */
+    border-radius: 10px; /* Arrondi les coins */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Effet d'ombre plus léger */
+}
+
+iframe {
+    width: 100%; /* Ajuste la largeur à 100% */
+    height: 450px; /* Hauteur fixe */
+    border: none; /* Supprime les bordures */
+}
+
+
+/* Styles pour la section Spécialisations */
+.specialities {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-direction: column; /* Organiser en colonne */
+    text-align: center; /* Centrer le texte */
+    margin: 30px auto; /* Ajouter un espace autour */
+    padding: 20px;
+    width: 80%; /* Définir une largeur relative */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+.specialities h2 {
+    margin-bottom: 20px;
+    color: #620e0e; /* Couleur du titre */
+    font-size: 28px;
+}
+
+.specialities p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.specialities ul {
+    list-style: none; /* Supprimer les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.specialities ul li {
+    margin: 10px 0; /* Espacement entre les éléments */
+    font-size: 18px;
+    font-weight: bold;
+    color: #620e0e; /* Couleur des titres */
+}
+
+.submenu {
+    list-style: none; /* Supprimer les puces */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #ee1d1d; /* Couleur des liens */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.submenu li a:hover {
+    color: #620e0e; /* Changement de couleur au survol */
+    text-decoration: underline;
+}
+
+
+
+/* Conteneur principal de la galerie */
+.galerie-container {
+    text-align: center; /* Centre le titre h2 */
+    margin: 20px auto; /* Centre la section avec une marge */
+    max-width: 1200px; /* Définit une largeur maximale */
+}
+
+/* Contenu de la galerie */
+.galerie {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espacement entre les images */
+    padding: 10px;
+}
+
+/* Images de la galerie */
+.galerie img {
+    width: 200px; /* Taille fixe pour chaque image */
+    height: 200px;
+    object-fit: cover; /* Garde le ratio des images tout en remplissant l'espace */
+    border: 2px solid #ddd;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galerie img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Augmente l'ombre au survol */
+}

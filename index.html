@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page d'Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Mon Site Web</div>
+        <nav class="navbar">
+            <a href="contact.html">Contact</a>
+            <a href="quiz.html">Quiz</a>
+            <div class="select-container">
+                <select onchange="navigateToPage(this)">
+                    <option value="">Découvrir Plus</option>
+                    <option value="Parcours.html">Parcours</option>
+                    <option value="compétences.html">Compétences</option>
+                    <option value="Expériences.html">Stages</option>
+                    <option value="formations.html">Formations</option>
+                    <option value="passions.html">Qualités</option>
+                    <option value="iit.html">IIT</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="text-content">
+            <h1>RIHAB Adalet</h1>
+            <p>
+                Diplômée récemment de l'Institut Supérieur d'Informatique et de Multimédia de Sfax, 
+                spécialisée en Big Data et Analyse de Données, je poursuis actuellement mes études en 1ère année de Génie 
+                Informatique à l’Institut International de Technologie (IIT).<br>
+                Passionnée par le développement logiciel, l’Intelligence Artificielle et l’Analyse de Données, je suis activement à la recherche
+                d’opportunités pour approfondir mes compétences et contribuer à des projets innovants.
+            </p>
+
+            <a href="#contact" class="btn">En savoir plus</a>
+
+        </div>
+        <div class="image-content">
+            <img src="images/riihab1.png" alt="Ma photo de profil">
+        </div>
+    </section>
+
+
+    <section class="social-icons">
+        <a href="#" class="icon"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="icon"><i class="fab fa-facebook"></i>facebook</a>
+    </section>
+
+    <section id="contact" class="w3-padding-64 w3-content w3-text-grey">
+        <h2 class="w3-text-light-grey">Contact</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sfax-Mahres 3060, Tunisia</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Téléphone: +216 23 224 289</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: adaletrihab4@gmail.com</p>
+        </div><br>
+    </section>
+    
+    <script>
+        function navigateToPage(select) {
+            const selectedValue = select.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+</body>
+</html>
